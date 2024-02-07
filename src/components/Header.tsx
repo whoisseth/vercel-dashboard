@@ -87,6 +87,7 @@ export default function Header() {
       <section className="flex gap-4 overflow-auto scrollbar-hide">
         {pages.map((d, i) => (
           <div
+            key={i}
             className={cn("py-2 border-b-2  border-transparent", {
               "dark:border-white": d.active
             })}
